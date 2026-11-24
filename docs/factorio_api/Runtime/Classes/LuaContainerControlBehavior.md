@@ -1,0 +1,33 @@
+---
+title: LuaContainerControlBehavior
+tags: [factorio-api, runtime, class]
+---
+# LuaContainerControlBehavior
+
+> **Extends:** [[LuaControlBehavior]]
+
+Control behavior for container entities.
+
+## Attributes
+
+### read_contents
+- **Type:** [[boolean]]
+- **Writable:** [[boolean]]
+`true` if this container is sending its content to a circuit network.
+
+### read_empty_slots
+- **Type:** [[boolean]]
+- **Writable:** [[boolean]]
+
+### empty_slots_signal
+- **Type:** [[SignalID]]
+- **Writable:** [[SignalID]]
+- **Optional**
+
+### valid
+- **Type:** [[boolean]]
+Is this object valid? This Lua object holds a reference to an object within the game engine. It is possible that the game-engine object is removed whilst a mod still holds the corresponding Lua object. If that happens, the object becomes invalid, i.e. this attribute will be `false`. Mods are advised to check for object validity if any change to the game state might have occurred between the creation of the Lua object and its access.
+
+### object_name
+- **Type:** [[string]]
+The class name of this object. Available even when `valid` is false. For LuaStruct objects it may also be suffixed with a dotted path to a member of the struct.

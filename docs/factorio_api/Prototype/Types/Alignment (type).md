@@ -1,0 +1,13 @@
+---
+title: Alignment
+tags: [factorio-api, prototype, type]
+---
+# Alignment
+
+*Note: `Alignment (type)`.*
+
+A string that specifies where a GUI element should be.
+
+## Type
+
+`"top-left"` | `"middle-left"` | `"left"` | `"bottom-left"` | `"top-center"` | `"middle-center"` | `"center"` | `"bottom-center"` | `"top-right"` | `"middle-right"` | `"right"` | `"bottom-right"`

@@ -1,0 +1,21 @@
+---
+title: UnlockQualityModifier
+tags: [factorio-api, prototype, type]
+---
+# UnlockQualityModifier
+
+> **Parent:** [[BaseModifier]]
+
+## Properties
+
+### type
+- **Type:** `"unlock-quality"`
+
+### use_icon_overlay_constant
+- **Type:** [[boolean (type)]]
+- **Optional**
+- **Default:** `false`
+If `false`, do not draw the small "constant" icon over the technology effect icon.
+
+### quality
+- **Type:** [[QualityID (type)]]

@@ -1,0 +1,29 @@
+---
+title: on_udp_packet_received
+tags: [factorio-api, runtime, event]
+---
+# on_udp_packet_received
+
+Called when new packets are processed by [[LuaHelpers#recv_udp|LuaHelpers::recv_udp]].
+
+## Data
+
+### payload
+- **Type:** [[string]]
+The packet data
+
+### source_port
+- **Type:** [[uint16]]
+The source port the packet was received from
+
+### player_index
+- **Type:** [[uint32]]
+The player index whose instance received this packet, or 0 if received on the server
+
+### name
+- **Type:** [[defines.events]]
+Identifier of the event.
+
+### tick
+- **Type:** [[MapTick]]
+Tick the event was generated.

@@ -1,0 +1,288 @@
+---
+title: prototype-tree
+tags: [factorio-api, guide]
+---
+## Prototype Inheritance Tree
+
+Prototypes rely on multiple levels of inheritance, which this page lists as a tree structure.
+
+- [[AmbientSound]]<span style="font-size: 15px"> - 'ambient-sound' </span>
+- [[AnimationPrototype]]<span style="font-size: 15px"> - 'animation' </span>
+- [[DeliverCategory]]<span style="font-size: 15px"> - 'deliver-category' </span>
+- [[DeliverImpactCombination]]<span style="font-size: 15px"> - 'deliver-impact-combination' </span>
+- [[EditorControllerPrototype]]<span style="font-size: 15px"> - 'editor-controller' </span>
+- [[FontPrototype]]<span style="font-size: 15px"> - 'font' </span>
+- [[GodControllerPrototype]]<span style="font-size: 15px"> - 'god-controller' </span>
+- [[ImpactCategory]]<span style="font-size: 15px"> - 'impact-category' </span>
+- [[MapGenPresets]]<span style="font-size: 15px"> - 'map-gen-presets' </span>
+- [[MapSettings]]<span style="font-size: 15px"> - 'map-settings' </span>
+- [[MouseCursor]]<span style="font-size: 15px"> - 'mouse-cursor' </span>
+- [[PrototypeBase]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+  - [[GuiStyle]]<span style="font-size: 15px"> - 'gui-style' </span>
+  - [[Prototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+    - [[AchievementPrototype]]<span style="font-size: 15px"> - 'achievement' </span>
+      - [[AchievementPrototypeWithCondition]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+        - [[CompleteObjectiveAchievementPrototype]]<span style="font-size: 15px"> - 'complete-objective-achievement' </span>
+        - [[DontBuildEntityAchievementPrototype]]<span style="font-size: 15px"> - 'dont-build-entity-achievement' </span>
+        - [[DontCraftManuallyAchievementPrototype]]<span style="font-size: 15px"> - 'dont-craft-manually-achievement' </span>
+        - [[DontKillManuallyAchievementPrototype]]<span style="font-size: 15px"> - 'dont-kill-manually-achievement' </span>
+        - [[DontResearchBeforeResearchingAchievementPrototype]]<span style="font-size: 15px"> - 'dont-research-before-researching-achievement' </span>
+        - [[DontUseEntityInEnergyProductionAchievementPrototype]]<span style="font-size: 15px"> - 'dont-use-entity-in-energy-production-achievement' </span>
+      - [[BuildEntityAchievementPrototype]]<span style="font-size: 15px"> - 'build-entity-achievement' </span>
+      - [[ChangedSurfaceAchievementPrototype]]<span style="font-size: 15px"> - 'change-surface-achievement' </span>
+      - [[CombatRobotCountAchievementPrototype]]<span style="font-size: 15px"> - 'combat-robot-count-achievement' </span>
+      - [[ConstructWithRobotsAchievementPrototype]]<span style="font-size: 15px"> - 'construct-with-robots-achievement' </span>
+      - [[CreatePlatformAchievementPrototype]]<span style="font-size: 15px"> - 'create-platform-achievement' </span>
+      - [[DeconstructWithRobotsAchievementPrototype]]<span style="font-size: 15px"> - 'deconstruct-with-robots-achievement' </span>
+      - [[DeliverByRobotsAchievementPrototype]]<span style="font-size: 15px"> - 'deliver-by-robots-achievement' </span>
+      - [[DepleteResourceAchievementPrototype]]<span style="font-size: 15px"> - 'deplete-resource-achievement' </span>
+      - [[DestroyCliffAchievementPrototype]]<span style="font-size: 15px"> - 'destroy-cliff-achievement' </span>
+      - [[EquipArmorAchievementPrototype]]<span style="font-size: 15px"> - 'equip-armor-achievement' </span>
+      - [[GroupAttackAchievementPrototype]]<span style="font-size: 15px"> - 'group-attack-achievement' </span>
+      - [[KillAchievementPrototype]]<span style="font-size: 15px"> - 'kill-achievement' </span>
+      - [[ModuleTransferAchievementPrototype]]<span style="font-size: 15px"> - 'module-transfer-achievement' </span>
+      - [[PlaceEquipmentAchievementPrototype]]<span style="font-size: 15px"> - 'place-equipment-achievement' </span>
+      - [[PlayerDamagedAchievementPrototype]]<span style="font-size: 15px"> - 'player-damaged-achievement' </span>
+      - [[ProduceAchievementPrototype]]<span style="font-size: 15px"> - 'produce-achievement' </span>
+      - [[ProducePerHourAchievementPrototype]]<span style="font-size: 15px"> - 'produce-per-hour-achievement' </span>
+      - [[ResearchAchievementPrototype]]<span style="font-size: 15px"> - 'research-achievement' </span>
+      - [[ResearchWithSciencePackAchievementPrototype]]<span style="font-size: 15px"> - 'research-with-science-pack-achievement' </span>
+      - [[ShootAchievementPrototype]]<span style="font-size: 15px"> - 'shoot-achievement' </span>
+      - [[SpaceConnectionDistanceTraveledAchievementPrototype]]<span style="font-size: 15px"> - 'space-connection-distance-traveled-achievement' </span>
+      - [[TrainPathAchievementPrototype]]<span style="font-size: 15px"> - 'train-path-achievement' </span>
+      - [[UseEntityInEnergyProductionAchievementPrototype]]<span style="font-size: 15px"> - 'use-entity-in-energy-production-achievement' </span>
+      - [[UseItemAchievementPrototype]]<span style="font-size: 15px"> - 'use-item-achievement' </span>
+    - [[ActiveTriggerPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+      - [[ChainActiveTriggerPrototype]]<span style="font-size: 15px"> - 'chain-active-trigger' </span>
+      - [[DelayedActiveTriggerPrototype]]<span style="font-size: 15px"> - 'delayed-active-trigger' </span>
+    - [[AirbornePollutantPrototype]]<span style="font-size: 15px"> - 'airborne-pollutant' </span>
+    - [[AmmoCategory]]<span style="font-size: 15px"> - 'ammo-category' </span>
+    - [[AsteroidChunkPrototype]]<span style="font-size: 15px"> - 'asteroid-chunk' </span>
+    - [[AutoplaceControl]]<span style="font-size: 15px"> - 'autoplace-control' </span>
+    - [[BurnerUsagePrototype]]<span style="font-size: 15px"> - 'burner-usage' </span>
+    - [[CollisionLayerPrototype]]<span style="font-size: 15px"> - 'collision-layer' </span>
+    - [[CustomEventPrototype]]<span style="font-size: 15px"> - 'custom-event' </span>
+    - [[CustomInputPrototype]]<span style="font-size: 15px"> - 'custom-input' </span>
+    - [[DamageType]]<span style="font-size: 15px"> - 'damage-type' </span>
+    - [[DecorativePrototype]]<span style="font-size: 15px"> - 'optimized-decorative' </span>
+    - [[EntityPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+      - [[ArrowPrototype]]<span style="font-size: 15px"> - 'arrow' </span>
+      - [[ArtilleryFlarePrototype]]<span style="font-size: 15px"> - 'artillery-flare' </span>
+      - [[ArtilleryProjectilePrototype]]<span style="font-size: 15px"> - 'artillery-projectile' </span>
+      - [[BeamPrototype]]<span style="font-size: 15px"> - 'beam' </span>
+      - [[CharacterCorpsePrototype]]<span style="font-size: 15px"> - 'character-corpse' </span>
+      - [[CliffPrototype]]<span style="font-size: 15px"> - 'cliff' </span>
+      - [[CorpsePrototype]]<span style="font-size: 15px"> - 'corpse' </span>
+        - [[RailRemnantsPrototype]]<span style="font-size: 15px"> - 'rail-remnants' </span>
+      - [[DeconstructibleTileProxyPrototype]]<span style="font-size: 15px"> - 'deconstructible-tile-proxy' </span>
+      - [[EntityGhostPrototype]]<span style="font-size: 15px"> - 'entity-ghost' </span>
+      - [[EntityWithHealthPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+        - [[EntityWithOwnerPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+          - [[AccumulatorPrototype]]<span style="font-size: 15px"> - 'accumulator' </span>
+          - [[AgriculturalTowerPrototype]]<span style="font-size: 15px"> - 'agricultural-tower' </span>
+          - [[ArtilleryTurretPrototype]]<span style="font-size: 15px"> - 'artillery-turret' </span>
+          - [[AsteroidCollectorPrototype]]<span style="font-size: 15px"> - 'asteroid-collector' </span>
+          - [[AsteroidPrototype]]<span style="font-size: 15px"> - 'asteroid' </span>
+          - [[BeaconPrototype]]<span style="font-size: 15px"> - 'beacon' </span>
+          - [[BoilerPrototype]]<span style="font-size: 15px"> - 'boiler' </span>
+          - [[BurnerGeneratorPrototype]]<span style="font-size: 15px"> - 'burner-generator' </span>
+          - [[CargoBayPrototype]]<span style="font-size: 15px"> - 'cargo-bay' </span>
+          - [[CargoLandingPadPrototype]]<span style="font-size: 15px"> - 'cargo-landing-pad' </span>
+          - [[CargoPodPrototype]]<span style="font-size: 15px"> - 'cargo-pod' </span>
+          - [[CharacterPrototype]]<span style="font-size: 15px"> - 'character' </span>
+          - [[CombinatorPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+            - [[ArithmeticCombinatorPrototype]]<span style="font-size: 15px"> - 'arithmetic-combinator' </span>
+            - [[DeciderCombinatorPrototype]]<span style="font-size: 15px"> - 'decider-combinator' </span>
+            - [[SelectorCombinatorPrototype]]<span style="font-size: 15px"> - 'selector-combinator' </span>
+          - [[ConstantCombinatorPrototype]]<span style="font-size: 15px"> - 'constant-combinator' </span>
+          - [[ContainerPrototype]]<span style="font-size: 15px"> - 'container' </span>
+            - [[LogisticContainerPrototype]]<span style="font-size: 15px"> - 'logistic-container' </span>
+              - [[InfinityContainerPrototype]]<span style="font-size: 15px"> - 'infinity-container' </span>
+            - [[TemporaryContainerPrototype]]<span style="font-size: 15px"> - 'temporary-container' </span>
+          - [[CraftingMachinePrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+            - [[AssemblingMachinePrototype]]<span style="font-size: 15px"> - 'assembling-machine' </span>
+              - [[RocketSiloPrototype]]<span style="font-size: 15px"> - 'rocket-silo' </span>
+            - [[FurnacePrototype]]<span style="font-size: 15px"> - 'furnace' </span>
+          - [[DisplayPanelPrototype]]<span style="font-size: 15px"> - 'display-panel' </span>
+          - [[ElectricEnergyInterfacePrototype]]<span style="font-size: 15px"> - 'electric-energy-interface' </span>
+          - [[ElectricPolePrototype]]<span style="font-size: 15px"> - 'electric-pole' </span>
+          - [[EnemySpawnerPrototype]]<span style="font-size: 15px"> - 'unit-spawner' </span>
+          - [[FlyingRobotPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+            - [[CaptureRobotPrototype]]<span style="font-size: 15px"> - 'capture-robot' </span>
+            - [[CombatRobotPrototype]]<span style="font-size: 15px"> - 'combat-robot' </span>
+            - [[RobotWithLogisticInterfacePrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+              - [[ConstructionRobotPrototype]]<span style="font-size: 15px"> - 'construction-robot' </span>
+              - [[LogisticRobotPrototype]]<span style="font-size: 15px"> - 'logistic-robot' </span>
+          - [[FusionGeneratorPrototype]]<span style="font-size: 15px"> - 'fusion-generator' </span>
+          - [[FusionReactorPrototype]]<span style="font-size: 15px"> - 'fusion-reactor' </span>
+          - [[GatePrototype]]<span style="font-size: 15px"> - 'gate' </span>
+          - [[GeneratorPrototype]]<span style="font-size: 15px"> - 'generator' </span>
+          - [[HeatInterfacePrototype]]<span style="font-size: 15px"> - 'heat-interface' </span>
+          - [[HeatPipePrototype]]<span style="font-size: 15px"> - 'heat-pipe' </span>
+          - [[InserterPrototype]]<span style="font-size: 15px"> - 'inserter' </span>
+          - [[LabPrototype]]<span style="font-size: 15px"> - 'lab' </span>
+          - [[LampPrototype]]<span style="font-size: 15px"> - 'lamp' </span>
+          - [[LandMinePrototype]]<span style="font-size: 15px"> - 'land-mine' </span>
+          - [[LightningAttractorPrototype]]<span style="font-size: 15px"> - 'lightning-attractor' </span>
+          - [[LinkedContainerPrototype]]<span style="font-size: 15px"> - 'linked-container' </span>
+          - [[MarketPrototype]]<span style="font-size: 15px"> - 'market' </span>
+          - [[MiningDrillPrototype]]<span style="font-size: 15px"> - 'mining-drill' </span>
+          - [[OffshorePumpPrototype]]<span style="font-size: 15px"> - 'offshore-pump' </span>
+          - [[PipePrototype]]<span style="font-size: 15px"> - 'pipe' </span>
+            - [[InfinityPipePrototype]]<span style="font-size: 15px"> - 'infinity-pipe' </span>
+          - [[PipeToGroundPrototype]]<span style="font-size: 15px"> - 'pipe-to-ground' </span>
+          - [[PlayerPortPrototype]]<span style="font-size: 15px"> - 'player-port' </span>
+          - [[PowerSwitchPrototype]]<span style="font-size: 15px"> - 'power-switch' </span>
+          - [[ProgrammableSpeakerPrototype]]<span style="font-size: 15px"> - 'programmable-speaker' </span>
+          - [[ProxyContainerPrototype]]<span style="font-size: 15px"> - 'proxy-container' </span>
+          - [[PumpPrototype]]<span style="font-size: 15px"> - 'pump' </span>
+          - [[RadarPrototype]]<span style="font-size: 15px"> - 'radar' </span>
+          - [[RailPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+            - [[CurvedRailAPrototype]]<span style="font-size: 15px"> - 'curved-rail-a' </span>
+              - [[ElevatedCurvedRailAPrototype]]<span style="font-size: 15px"> - 'elevated-curved-rail-a' </span>
+            - [[CurvedRailBPrototype]]<span style="font-size: 15px"> - 'curved-rail-b' </span>
+              - [[ElevatedCurvedRailBPrototype]]<span style="font-size: 15px"> - 'elevated-curved-rail-b' </span>
+            - [[HalfDiagonalRailPrototype]]<span style="font-size: 15px"> - 'half-diagonal-rail' </span>
+              - [[ElevatedHalfDiagonalRailPrototype]]<span style="font-size: 15px"> - 'elevated-half-diagonal-rail' </span>
+            - [[LegacyCurvedRailPrototype]]<span style="font-size: 15px"> - 'legacy-curved-rail' </span>
+            - [[LegacyStraightRailPrototype]]<span style="font-size: 15px"> - 'legacy-straight-rail' </span>
+            - [[RailRampPrototype]]<span style="font-size: 15px"> - 'rail-ramp' </span>
+            - [[StraightRailPrototype]]<span style="font-size: 15px"> - 'straight-rail' </span>
+              - [[ElevatedStraightRailPrototype]]<span style="font-size: 15px"> - 'elevated-straight-rail' </span>
+          - [[RailSignalBasePrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+            - [[RailChainSignalPrototype]]<span style="font-size: 15px"> - 'rail-chain-signal' </span>
+            - [[RailSignalPrototype]]<span style="font-size: 15px"> - 'rail-signal' </span>
+          - [[RailSupportPrototype]]<span style="font-size: 15px"> - 'rail-support' </span>
+          - [[ReactorPrototype]]<span style="font-size: 15px"> - 'reactor' </span>
+          - [[RoboportPrototype]]<span style="font-size: 15px"> - 'roboport' </span>
+          - [[SegmentPrototype]]<span style="font-size: 15px"> - 'segment' </span>
+            - [[SegmentedUnitPrototype]]<span style="font-size: 15px"> - 'segmented-unit' </span>
+          - [[SimpleEntityWithOwnerPrototype]]<span style="font-size: 15px"> - 'simple-entity-with-owner' </span>
+            - [[SimpleEntityWithForcePrototype]]<span style="font-size: 15px"> - 'simple-entity-with-force' </span>
+          - [[SolarPanelPrototype]]<span style="font-size: 15px"> - 'solar-panel' </span>
+          - [[SpacePlatformHubPrototype]]<span style="font-size: 15px"> - 'space-platform-hub' </span>
+          - [[SpiderLegPrototype]]<span style="font-size: 15px"> - 'spider-leg' </span>
+          - [[SpiderUnitPrototype]]<span style="font-size: 15px"> - 'spider-unit' </span>
+          - [[StorageTankPrototype]]<span style="font-size: 15px"> - 'storage-tank' </span>
+          - [[ThrusterPrototype]]<span style="font-size: 15px"> - 'thruster' </span>
+          - [[TrainStopPrototype]]<span style="font-size: 15px"> - 'train-stop' </span>
+          - [[TransportBeltConnectablePrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+            - [[LaneSplitterPrototype]]<span style="font-size: 15px"> - 'lane-splitter' </span>
+            - [[LinkedBeltPrototype]]<span style="font-size: 15px"> - 'linked-belt' </span>
+            - [[LoaderPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+              - [[Loader1x1Prototype]]<span style="font-size: 15px"> - 'loader-1x1' </span>
+              - [[Loader1x2Prototype]]<span style="font-size: 15px"> - 'loader' </span>
+            - [[SplitterPrototype]]<span style="font-size: 15px"> - 'splitter' </span>
+            - [[TransportBeltPrototype]]<span style="font-size: 15px"> - 'transport-belt' </span>
+            - [[UndergroundBeltPrototype]]<span style="font-size: 15px"> - 'underground-belt' </span>
+          - [[TurretPrototype]]<span style="font-size: 15px"> - 'turret' </span>
+            - [[AmmoTurretPrototype]]<span style="font-size: 15px"> - 'ammo-turret' </span>
+            - [[ElectricTurretPrototype]]<span style="font-size: 15px"> - 'electric-turret' </span>
+            - [[FluidTurretPrototype]]<span style="font-size: 15px"> - 'fluid-turret' </span>
+          - [[UnitPrototype]]<span style="font-size: 15px"> - 'unit' </span>
+          - [[ValvePrototype]]<span style="font-size: 15px"> - 'valve' </span>
+          - [[VehiclePrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+            - [[CarPrototype]]<span style="font-size: 15px"> - 'car' </span>
+            - [[RollingStockPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+              - [[ArtilleryWagonPrototype]]<span style="font-size: 15px"> - 'artillery-wagon' </span>
+              - [[CargoWagonPrototype]]<span style="font-size: 15px"> - 'cargo-wagon' </span>
+                - [[InfinityCargoWagonPrototype]]<span style="font-size: 15px"> - 'infinity-cargo-wagon' </span>
+              - [[FluidWagonPrototype]]<span style="font-size: 15px"> - 'fluid-wagon' </span>
+              - [[LocomotivePrototype]]<span style="font-size: 15px"> - 'locomotive' </span>
+            - [[SpiderVehiclePrototype]]<span style="font-size: 15px"> - 'spider-vehicle' </span>
+          - [[WallPrototype]]<span style="font-size: 15px"> - 'wall' </span>
+        - [[FishPrototype]]<span style="font-size: 15px"> - 'fish' </span>
+        - [[SimpleEntityPrototype]]<span style="font-size: 15px"> - 'simple-entity' </span>
+        - [[TreePrototype]]<span style="font-size: 15px"> - 'tree' </span>
+          - [[PlantPrototype]]<span style="font-size: 15px"> - 'plant' </span>
+      - [[ExplosionPrototype]]<span style="font-size: 15px"> - 'explosion' </span>
+      - [[FireFlamePrototype]]<span style="font-size: 15px"> - 'fire' </span>
+      - [[FluidStreamPrototype]]<span style="font-size: 15px"> - 'stream' </span>
+      - [[HighlightBoxEntityPrototype]]<span style="font-size: 15px"> - 'highlight-box' </span>
+      - [[ItemEntityPrototype]]<span style="font-size: 15px"> - 'item-entity' </span>
+      - [[ItemRequestProxyPrototype]]<span style="font-size: 15px"> - 'item-request-proxy' </span>
+      - [[LightningPrototype]]<span style="font-size: 15px"> - 'lightning' </span>
+      - [[ParticleSourcePrototype]]<span style="font-size: 15px"> - 'particle-source' </span>
+      - [[ProjectilePrototype]]<span style="font-size: 15px"> - 'projectile' </span>
+      - [[ResourceEntityPrototype]]<span style="font-size: 15px"> - 'resource' </span>
+      - [[RocketSiloRocketPrototype]]<span style="font-size: 15px"> - 'rocket-silo-rocket' </span>
+      - [[RocketSiloRocketShadowPrototype]]<span style="font-size: 15px"> - 'rocket-silo-rocket-shadow' </span>
+      - [[SmokePrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+        - [[SmokeWithTriggerPrototype]]<span style="font-size: 15px"> - 'smoke-with-trigger' </span>
+      - [[SpeechBubblePrototype]]<span style="font-size: 15px"> - 'speech-bubble' </span>
+      - [[StickerPrototype]]<span style="font-size: 15px"> - 'sticker' </span>
+      - [[TileGhostPrototype]]<span style="font-size: 15px"> - 'tile-ghost' </span>
+    - [[EquipmentCategory]]<span style="font-size: 15px"> - 'equipment-category' </span>
+    - [[EquipmentGridPrototype]]<span style="font-size: 15px"> - 'equipment-grid' </span>
+    - [[EquipmentPrototype]]<span style="font-size: 15px"> - <span class="grey">abstract</span></span>
+      - [[ActiveDefenseEquipmentPrototype]]<span style="font-size: 15px"> - 'active-defense-equipment' </span>
+      - [[BatteryEquipmentPrototype]]<span style="font-size: 15px"> - 'battery-equipment' </span>
+      - [[BeltImmunityEquipmentPrototype]]<span style="font-size: 15px"> - 'belt-immunity-equipment' </span>
+      - [[ElectricEnergyInterfaceEquipmentPrototype]]<span style="font-size: 15px"> - 'electric-energy-interface-equipment' </span>
+      - [[EnergyShieldEquipmentPrototype]]<span style="font-size: 15px"> - 'energy-shield-equipment' </span>
+      - [[EquipmentGhostPrototype]]<span style="font-size: 15px"> - 'equipment-ghost' </span>
+      - [[GeneratorEquipmentPrototype]]<span style="font-size: 15px"> - 'generator-equipment' </span>
+      - [[InventoryBonusEquipmentPrototype]]<span style="font-size: 15px"> - 'inventory-bonus-equipment' </span>
+      - [[MovementBonusEquipmentPrototype]]<span style="font-size: 15px"> - 'movement-bonus-equipment' </span>
+      - [[NightVisionEquipmentPrototype]]<span style="font-size: 15px"> - 'night-vision-equipment' </span>
+      - [[RoboportEquipmentPrototype]]<span style="font-size: 15px"> - 'roboport-equipment' </span>
+      - [[SolarPanelEquipmentPrototype]]<span style="font-size: 15px"> - 'solar-panel-equipment' </span>
+    - [[FluidPrototype]]<span style="font-size: 15px"> - 'fluid' </span>
+    - [[FuelCategory]]<span style="font-size: 15px"> - 'fuel-category' </span>
+    - [[ItemGroup]]<span style="font-size: 15px"> - 'item-group' </span>
+    - [[ItemPrototype]]<span style="font-size: 15px"> - 'item' </span>
+      - [[AmmoItemPrototype]]<span style="font-size: 15px"> - 'ammo' </span>
+      - [[CapsulePrototype]]<span style="font-size: 15px"> - 'capsule' </span>
+      - [[GunPrototype]]<span style="font-size: 15px"> - 'gun' </span>
+      - [[ItemWithEntityDataPrototype]]<span style="font-size: 15px"> - 'item-with-entity-data' </span>
+      - [[ItemWithLabelPrototype]]<span style="font-size: 15px"> - 'item-with-label' </span>
+        - [[ItemWithInventoryPrototype]]<span style="font-size: 15px"> - 'item-with-inventory' </span>
+          - [[BlueprintBookPrototype]]<span style="font-size: 15px"> - 'blueprint-book' </span>
+        - [[ItemWithTagsPrototype]]<span style="font-size: 15px"> - 'item-with-tags' </span>
+        - [[SelectionToolPrototype]]<span style="font-size: 15px"> - 'selection-tool' </span>
+          - [[BlueprintItemPrototype]]<span style="font-size: 15px"> - 'blueprint' </span>
+          - [[CopyPasteToolPrototype]]<span style="font-size: 15px"> - 'copy-paste-tool' </span>
+          - [[DeconstructionItemPrototype]]<span style="font-size: 15px"> - 'deconstruction-item' </span>
+          - [[SpidertronRemotePrototype]]<span style="font-size: 15px"> - 'spidertron-remote' </span>
+          - [[UpgradeItemPrototype]]<span style="font-size: 15px"> - 'upgrade-item' </span>
+      - [[ModulePrototype]]<span style="font-size: 15px"> - 'module' </span>
+      - [[RailPlannerPrototype]]<span style="font-size: 15px"> - 'rail-planner' </span>
+      - [[SpacePlatformStarterPackPrototype]]<span style="font-size: 15px"> - 'space-platform-starter-pack' </span>
+      - [[ToolPrototype]]<span style="font-size: 15px"> - 'tool' </span>
+        - [[ArmorPrototype]]<span style="font-size: 15px"> - 'armor' </span>
+        - [[RepairToolPrototype]]<span style="font-size: 15px"> - 'repair-tool' </span>
+    - [[ItemSubGroup]]<span style="font-size: 15px"> - 'item-subgroup' </span>
+    - [[ModData]]<span style="font-size: 15px"> - 'mod-data' </span>
+    - [[ModuleCategory]]<span style="font-size: 15px"> - 'module-category' </span>
+    - [[NamedNoiseExpression]]<span style="font-size: 15px"> - 'noise-expression' </span>
+    - [[NamedNoiseFunction]]<span style="font-size: 15px"> - 'noise-function' </span>
+    - [[ParticlePrototype]]<span style="font-size: 15px"> - 'optimized-particle' </span>
+    - [[ProcessionLayerInheritanceGroup]]<span style="font-size: 15px"> - 'procession-layer-inheritance-group' </span>
+    - [[ProcessionPrototype]]<span style="font-size: 15px"> - 'procession' </span>
+    - [[QualityPrototype]]<span style="font-size: 15px"> - 'quality' </span>
+    - [[RecipeCategory]]<span style="font-size: 15px"> - 'recipe-category' </span>
+    - [[RecipePrototype]]<span style="font-size: 15px"> - 'recipe' </span>
+    - [[ResourceCategory]]<span style="font-size: 15px"> - 'resource-category' </span>
+    - [[ShortcutPrototype]]<span style="font-size: 15px"> - 'shortcut' </span>
+    - [[SpaceConnectionPrototype]]<span style="font-size: 15px"> - 'space-connection' </span>
+    - [[SpaceLocationPrototype]]<span style="font-size: 15px"> - 'space-location' </span>
+      - [[PlanetPrototype]]<span style="font-size: 15px"> - 'planet' </span>
+    - [[SurfacePropertyPrototype]]<span style="font-size: 15px"> - 'surface-property' </span>
+    - [[SurfacePrototype]]<span style="font-size: 15px"> - 'surface' </span>
+    - [[TechnologyPrototype]]<span style="font-size: 15px"> - 'technology' </span>
+    - [[TilePrototype]]<span style="font-size: 15px"> - 'tile' </span>
+    - [[TrivialSmokePrototype]]<span style="font-size: 15px"> - 'trivial-smoke' </span>
+    - [[VirtualSignalPrototype]]<span style="font-size: 15px"> - 'virtual-signal' </span>
+  - [[TipsAndTricksItem]]<span style="font-size: 15px"> - 'tips-and-tricks-item' </span>
+  - [[TutorialDefinition]]<span style="font-size: 15px"> - 'tutorial' </span>
+  - [[UtilityConstants]]<span style="font-size: 15px"> - 'utility-constants' </span>
+  - [[UtilitySounds]]<span style="font-size: 15px"> - 'utility-sounds' </span>
+  - [[UtilitySprites]]<span style="font-size: 15px"> - 'utility-sprites' </span>
+- [[RemoteControllerPrototype]]<span style="font-size: 15px"> - 'remote-controller' </span>
+- [[SoundPrototype]]<span style="font-size: 15px"> - 'sound' </span>
+- [[SpectatorControllerPrototype]]<span style="font-size: 15px"> - 'spectator-controller' </span>
+- [[SpritePrototype]]<span style="font-size: 15px"> - 'sprite' </span>
+- [[TileEffectDefinition]]<span style="font-size: 15px"> - 'tile-effect' </span>
+- [[TipsAndTricksItemCategory]]<span style="font-size: 15px"> - 'tips-and-tricks-item-category' </span>
+- [[TriggerTargetType]]<span style="font-size: 15px"> - 'trigger-target-type' </span>
+

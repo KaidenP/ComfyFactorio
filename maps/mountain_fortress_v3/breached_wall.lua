@@ -164,7 +164,7 @@ local breach_wall_warning_teleport = function (player, check_trusted)
     end
 
     local wave_number = WD.get('wave_number')
-    if wave_number >= 200 then
+    if wave_number >= 500 then
         return false
     end
 
@@ -191,7 +191,7 @@ local breach_wall_enforced = function (player, boundary)
     end
 
     local wave_number = WD.get('wave_number')
-    if wave_number >= 200 then
+    if wave_number >= 500 then
         return false
     end
 
@@ -550,7 +550,7 @@ local function distance(player)
         local wave_number = WD.get('wave_number')
         local enforce_wave_200_before_collapse = Public.get('enforce_wave_200_before_collapse')
         if enforce_wave_200_before_collapse then
-            if wave_number < 200 then
+            if wave_number < 500 then
                 breach_wall_enforced(player, max + (adjusted_zones.reversed and 32 or 0))
                 return
             end

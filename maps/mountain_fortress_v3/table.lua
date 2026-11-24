@@ -10,7 +10,7 @@ local Math = require 'utils.math.math'
 
 local stateful_settings =
 {
-    direction = 'south',
+    direction = 'west',
     reversed = false,
     current_planet = 'fortress',
     darkness = false
@@ -57,7 +57,7 @@ local this =
         size = nil,
         shuffled_zones = nil,
         starting_zone = false,
-        direction = stateful_settings.direction or 'south',
+        direction = stateful_settings.direction or 'west',
         reversed = stateful_settings.reversed,
         disable_terrain = false
     },
@@ -251,7 +251,7 @@ Config.register_scenario_module(
                 function (_, event)
                     if event.element.switch_state == 'left' then
                         this.collapse_grace = true
-                        Config.get_actor(event, '[Collapse]', 'has enabled the collapse function. Collapse will occur after wave 100!', false, 'mtn_v3_gui.collapse_grace_enabled')
+                        Config.get_actor(event, '[Collapse]', 'has enabled the collapse function. Collapse will occur after wave 500!', false, 'mtn_v3_gui.collapse_grace_enabled')
                     else
                         this.collapse_grace = false
                         Config.get_actor(event, '[Collapse]', 'has disabled the collapse function. You must breach the first zone for collapse to occur!', false, 'mtn_v3_gui.collapse_grace_disabled')
@@ -747,7 +747,7 @@ function Public.reset_main_table()
         size = nil,
         shuffled_zones = nil,
         starting_zone = true,
-        direction = stateful_settings.direction or 'south',
+        direction = stateful_settings.direction or 'west',
         reversed = stateful_settings.reversed,
         disable_terrain = false
     }

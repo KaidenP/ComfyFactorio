@@ -795,6 +795,16 @@ local function is_position_near(area, table_to_check)
     return status
 end
 
+local function roll_wagon_limit()
+    -- Weighted number of wild train pieces per zone.
+    local roll = Math.random(1, 100)
+    if roll <= 10 then return 0 end -- 10%
+    if roll <= 60 then return 1 end -- 50%
+    if roll <= 85 then return 2 end -- 25%
+    if roll <= 95 then return 3 end -- 10%
+    return 4                       --  5%
+end
+
 local function place_wagon(data, adjusted_zones)
     local final_battle = Public.get('final_battle')
     if final_battle then
@@ -813,7 +823,7 @@ local function place_wagon(data, adjusted_zones)
 
     local placed_trains_in_zone = Public.get('placed_trains_in_zone')
     if not placed_trains_in_zone.randomized then
-        placed_trains_in_zone.limit = Math.random(0, 2)
+        placed_trains_in_zone.limit = roll_wagon_limit()
         placed_trains_in_zone.randomized = true
         placed_trains_in_zone = Public.get('placed_trains_in_zone')
     end

@@ -244,7 +244,7 @@ local compare_collapse_and_train = function ()
             local reverse_result = Math.abs(r_c_y - t_y)
             if reverse_result > 200 then
                 Collapse.reverse_start_now(true, false)
-                Collapse.set_speed(1)
+                Collapse.set_speed(8)
                 local reverse_amount = 40
                 if Orient.is_horizontal() then
                     reverse_amount = Math.floor(reverse_amount * Orient.zone_width() / Public.zone_settings.zone_width + 0.5)
@@ -260,7 +260,7 @@ local compare_collapse_and_train = function ()
 
         if result > 200 then
             Collapse.start_now(true, false)
-            Collapse.set_speed(1)
+            Collapse.set_speed(8)
             local catchup_amount = 40
             if Orient.is_horizontal() then
                 catchup_amount = Math.floor(catchup_amount * Orient.zone_width() / Public.zone_settings.zone_width + 0.5)
@@ -280,7 +280,7 @@ local compare_collapse_and_train = function ()
         Public.set_difficulty()
     else
         Collapse.set_force_mode(false)
-        Collapse.set_speed(1)
+        Collapse.set_speed(8)
         local catchup_amount = 10
         if Orient.is_horizontal() then
             catchup_amount = Math.floor(catchup_amount * Orient.zone_width() / Public.zone_settings.zone_width + 0.5)
@@ -290,7 +290,7 @@ local compare_collapse_and_train = function ()
     end
 end
 
-local collapse_after_wave_200 = function ()
+local collapse_after_wave_500 = function ()
     local final_battle = Public.get('final_battle')
     if final_battle then
         return
@@ -311,7 +311,7 @@ local collapse_after_wave_200 = function ()
 
     local wave_number = WD.get_wave()
 
-    if wave_number >= 200 and not Collapse.has_collapse_started() then
+    if wave_number >= 500 and not Collapse.has_collapse_started() then
         Collapse.start_now(true)
         local data =
         {
@@ -351,7 +351,7 @@ local nth_250_tick = function ()
         return
     end
     compare_collapse_and_train()
-    collapse_after_wave_200()
+    collapse_after_wave_500()
     Public.set_spawn_position()
     Public.set_wd_surface_index()
 end

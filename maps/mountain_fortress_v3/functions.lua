@@ -337,7 +337,7 @@ local pause_waves_custom_callback_token =
             end
 
             local wave_number = WD.get_wave()
-            if wave_number >= 200 then
+            if wave_number >= 500 then
                 Collapse.start_now(event.start, not event.start)
                 local message = event.start and { 'mtn_v3_map.collapse_resumed' } or { 'mtn_v3_map.collapse_stopped' }
                 Alert.alert_all_players(30, message, nil, 'achievement/tech-maniac', 0.6, 'global')
@@ -2577,13 +2577,13 @@ local function apply_collapse_settings(context, amount)
     end
 
     if context.player_count >= 1 and context.player_count <= 8 then
-        Collapse.set_speed(8)
+        Collapse.set_speed(32)
     elseif context.player_count > 8 and context.player_count <= 20 then
-        Collapse.set_speed(7)
+        Collapse.set_speed(28)
     elseif context.player_count > 20 and context.player_count <= 35 then
-        Collapse.set_speed(6)
+        Collapse.set_speed(24)
     elseif context.player_count > 35 then
-        Collapse.set_speed(5)
+        Collapse.set_speed(20)
     end
 end
 

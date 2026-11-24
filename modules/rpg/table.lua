@@ -46,8 +46,8 @@ local Public = {}
 Public.points_per_level = 5
 
 Public.experience_levels = { 0 }
-for a = 1, 4999, 1 do -- max level
-    Public.experience_levels[#Public.experience_levels + 1] = Public.experience_levels[#Public.experience_levels] + a * 8
+for a = 1, 9998, 1 do -- max level
+    Public.experience_levels[#Public.experience_levels + 1] = Public.experience_levels[#Public.experience_levels] + a * 4
 end
 
 Public.gui_settings_levels =

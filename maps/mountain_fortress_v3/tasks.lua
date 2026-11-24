@@ -388,7 +388,7 @@ function Public.reset_map(current_task)
 
     Difficulty.reset_difficulty_poll({ closing_timeout = game.tick + 36000 })
     Collapse.set_max_line_size(Orient.zone_width() + 110, true)
-    Collapse.set_speed(8)
+    Collapse.set_speed(32)
     Collapse.set_amount(1)
     Collapse.set_force_mode(false)
     Collapse.set_surface_index(surface.index)

@@ -190,10 +190,10 @@ local coin_yield =
 
 local entities_that_earn_coins =
 {
-    ['artillery-turret'] = true,
-    ['gun-turret'] = true,
-    ['laser-turret'] = true,
-    ['flamethrower-turret'] = true
+    ['ammo-turret'] = true,
+    ['electric-turret'] = true,
+    ['fluid-turret'] = true,
+    ['artillery-turret'] = true
 }
 
 local function check_quality()
@@ -268,6 +268,7 @@ local function on_entity_died(event)
     if not coin_count then
         return
     end
+    coin_count = coin_count * 2
 
     local players_to_reward = {}
     local p
@@ -329,7 +330,7 @@ local function on_entity_died(event)
             end
         end
         if not Public.get('final_battle') then
-            if entities_that_earn_coins[cause.name] then
+            if cause.valid and entities_that_earn_coins[cause.type] then
                 event.entity.surface.spill_item_stack({ position = cause.position, stack = { name = 'coin', count = coin_count, quality = quality }, enable_looted = true })
                 reward_has_been_given = true
             end

@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "0e7456810bf6c733",
+    "type": "split",
+    "children": [
+      {
+        "id": "5044be42d9012304",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d485a610d00e3076",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mountain_fortress/dependencies.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "dependencies"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f5fe940131694486",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fa40ca6a4baaa88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ad2547ab2cd137a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "60994795b6e37931",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "81e484d731c4c954",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "820d67423d4613cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "a1187d8f180b2fa8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b02e91e7ae4b5723",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "mountain_fortress/dependencies.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "fcbb4e11f47d8fde",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "mountain_fortress/dependencies.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "157e47b753105475",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8a2c9575f27a1d2e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8b147e3648423b9d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "mountain_fortress/dependencies.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "d485a610d00e3076",
+  "lastOpenFiles": [
+    "mountain_fortress/systems.md",
+    "mountain_fortress/submodules.md",
+    "architecture.md",
+    "factorio_api/Guides.md",
+    "factorio_api/attachments/control-stage.png",
+    "factorio_api/attachments/settings-stage.png",
+    "factorio_api/attachments/factorio-logo.png",
+    "factorio_api/attachments/favicon.png",
+    "factorio_api/attachments/space_age.png",
+    "factorio_api/attachments/expand-symbol.png",
+    "factorio_api/attachments/data-stage.png",
+    "factorio_api/attachments/collapse-symbol.png",
+    "factorio_api/attachments/search.svg",
+    "factorio_api/attachments/link-symbol.png",
+    "factorio_api/attachments",
+    "factorio_api/Guides/storage.md",
+    "factorio_api/Guides/prototype-tree.md",
+    "factorio_api/Guides/noise-expressions.md",
+    "factorio_api/Guides/mod-structure.md",
+    "factorio_api/Guides/migrations.md",
+    "factorio_api/Guides/libraries.md",
+    "factorio_api/Guides/json-docs-runtime.md",
+    "factorio_api/Guides/json-docs-prototype.md",
+    "factorio_api/Guides/item-weight.md",
+    "factorio_api/Guides/instrument.md",
+    "factorio_api/Guides/furnace-recipe-selection.md",
+    "factorio_api/Guides/data-lifecycle.md",
+    "factorio_api/Guides/circuit-recipe-selection.md",
+    "factorio_api/Guides/changelog-format.md",
+    "factorio_api/Guides",
+    "factorio_api/Factorio API.md",
+    "factorio_api/Prototype/Types.md",
+    "factorio_api/Prototype/Prototypes.md",
+    "factorio_api/Runtime/Functions.md",
+    "factorio_api/Runtime/Objects.md",
+    "factorio_api/Runtime/Defines.md",
+    "factorio_api/Runtime/Concepts.md",
+    "factorio_api/Runtime/Events.md",
+    "factorio_api/Prototype/Types",
+    "factorio_api/Prototype/Prototypes",
+    "factorio_api/Prototype",
+    "factorio_api/Runtime/Functions",
+    "factorio_api/Runtime/Objects",
+    "factorio_api/Runtime/Defines",
+    "factorio_api/Runtime/Concepts",
+    "factorio_api/Runtime/Events"
+  ]
+}
